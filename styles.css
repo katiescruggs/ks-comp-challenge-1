@@ -1,0 +1,195 @@
+html, body {
+	background-color: #9D6B85;
+	color: white;
+	font-family: Sans-Serif;
+	height: 100%;
+}
+
+aside {
+	background-image: url(images/crop-right.jpeg);
+	background-size: cover;
+	float: right;
+	height: 100%;
+	width: 40%;
+}
+
+.arrows {
+	align-items: center;
+	display: flex;
+	height: 87.5%;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.arrow {
+  	filter: drop-shadow(5px 5px 5px #222);
+	height: 50px;
+	width: 50px;
+}
+
+.left {
+	margin-left: 10px;
+}
+
+.right {
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.dots {
+	align-content: flex-start;
+	display: flex;
+	justify-content: flex-end;
+	margin: 15px;
+	z-index: 1;
+}
+
+.dot {
+	align-self: flex-start;
+  	filter: drop-shadow(5px 5px 5px #222);
+	height: 10px;
+	margin: 3px;
+	width: 10px;
+}
+
+.dot:nth-child(2), .dot:nth-child(3) {
+	opacity: 0.5;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	float: left;
+	width: 60%;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	height: 33.33vh;
+	justify-content: center;
+	text-align: center;
+	width: 33.33%;
+}
+
+.icon {
+	margin: 0px auto;
+	width: 50px;
+}
+
+h2 {
+	margin: 20px;
+}
+
+header {
+	padding: 10px;
+}
+
+h1 {
+	font-size: 200%;
+	margin: 20px;
+}
+
+p {
+	margin: 5px 20px;
+}
+
+.buttons {
+	align-items: center;
+	display: inline-flex;
+}
+
+button {
+	background-color: #7D80DA;
+	border: 3px solid white;
+	color: white;
+	flex: 0 0 auto;
+	font-size: 100%;
+	margin: 20px;
+	margin-right: 0px;
+	padding: 15px;
+	width: 120px;
+}
+
+.button-icon {
+	margin: 0px;
+	width: 17.5px;
+}
+
+.section0 {
+	text-align: left;
+	width: 66.66%;
+}
+
+.section0, .section4 {
+	background-color: #7D80DA;
+}
+
+.section1 {
+	background-color: #62546E;
+}
+
+.section2, .section6 {
+	background-color: #382249;
+}
+
+.section3 {
+	background-color: #F6C2B2;
+}
+
+.section5, .section7 {
+	background-color: #9D6B85; 
+}
+
+/*colors: #62546E #F6C2B2 #DCA4A6 #382249 #9D6B85*/
+
+@media screen and (max-width: 800px) {
+	aside {
+		background-image: url(images/crop-for-header.jpeg);
+		float: none;
+		height: 200px;
+		width: 100%;
+	}
+
+	.container {
+		height: auto;
+		width: 100%;
+	}
+
+	section {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	aside {
+		background-image: url(images/crop-for-header-smaller.jpeg);
+	}
+	section {
+		width: 50%;
+	}
+
+	.section0 {
+		width: 100%;
+	}
+
+	.section7 {
+		background-color: #F6C2B2;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	section {
+		width: 100%;
+	}
+
+	button {
+		display: block;
+	}
+
+	.section7 {
+		background-color: #9D6B85: 
+	}
+
+}
