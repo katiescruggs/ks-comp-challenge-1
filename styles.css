@@ -61,9 +61,6 @@ aside {
 	flex-wrap: wrap;
 	float: left;
 	width: 60%;
-
-
-	
 	filter: drop-shadow(5px 10px 10px #382249);
 }
 
@@ -127,8 +124,8 @@ a {
 }
 
 .button-icon {
-	margin-right: 5px;
 	height: 30px;
+	margin-right: 5px;
 }
 
 .section0 {
@@ -183,7 +180,6 @@ a {
 	.container {
 		height: auto;
 		width: 100%;
-
 		filter: drop-shadow(-5px -5px 10px #382249);
 	}
 
@@ -205,14 +201,13 @@ a {
 	}
 
 	.section0 {
-		width: 100%;
 		height: auto;
+		width: 100%;
 	}
 
 	.section7 {
 		background-color: #F6C2B2;
 	}
-
 }
 
 @media screen and (max-width: 320px) {
