@@ -1,7 +1,7 @@
 html, body {
-	background-color: #9D6B85;
+	background-color: #62546E;
 	color: white;
-	font-family: Sans-Serif;
+	font-family: Helvetica;
 	height: 100%;
 }
 
@@ -16,7 +16,7 @@ aside {
 .arrows {
 	align-items: center;
 	display: flex;
-	height: 87.5%;
+	height: 82.5%;
 	justify-content: space-between;
 	margin: auto;
 }
@@ -40,7 +40,7 @@ aside {
 	align-content: flex-start;
 	display: flex;
 	justify-content: flex-end;
-	margin: 15px;
+	padding: 15px;
 	z-index: 1;
 }
 
@@ -61,6 +61,10 @@ aside {
 	flex-wrap: wrap;
 	float: left;
 	width: 60%;
+
+
+	
+	filter: drop-shadow(5px 10px 10px #382249);
 }
 
 section {
@@ -100,20 +104,27 @@ p {
 }
 
 button {
+	align-items: center;
 	background-color: #7D80DA;
 	border: 3px solid white;
 	color: white;
+	display: flex;
 	flex: 0 0 auto;
 	font-size: 100%;
+	justify-content: center;
 	margin: 20px;
 	margin-right: 0px;
-	padding: 15px;
+	padding: 10px 0px;
 	width: 120px;
 }
 
-.button-icon {
+button > p {
 	margin: 0px;
-	width: 17.5px;
+}
+
+.button-icon {
+	margin-right: 5px;
+	height: 30px;
 }
 
 .section0 {
@@ -142,22 +153,42 @@ button {
 }
 
 /*colors: #62546E #F6C2B2 #DCA4A6 #382249 #9D6B85*/
+@media screen and (max-height: 600px) {
+	.container {
+		height: auto;
+	}
+
+	section {
+		height: 240px;
+	}
+
+	aside {
+		height: 720px;
+	}
+}
+
 
 @media screen and (max-width: 800px) {
 	aside {
 		background-image: url(images/crop-for-header.jpeg);
 		float: none;
-		height: 200px;
+		height: 240px;
 		width: 100%;
 	}
 
 	.container {
 		height: auto;
 		width: 100%;
+
+		filter: drop-shadow(-5px -5px 10px #382249);
 	}
 
 	section {
-		height: 200px;
+		height: 240px;
+	}
+
+	.arrows {
+		height: 62%;
 	}
 }
 
@@ -171,6 +202,7 @@ button {
 
 	.section0 {
 		width: 100%;
+		height: auto;
 	}
 
 	.section7 {
@@ -184,12 +216,18 @@ button {
 		width: 100%;
 	}
 
+	.section0 {
+		height: auto;
+	}
+}
+
+
+@media screen and (max-width: 310px) {
+	.buttons {
+		flex-wrap: wrap;
+	}
+
 	button {
-		display: block;
+		margin: 5px 20px;
 	}
-
-	.section7 {
-		background-color: #9D6B85: 
-	}
-
 }
